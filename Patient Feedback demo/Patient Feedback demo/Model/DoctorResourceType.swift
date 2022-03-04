@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct DoctorResourceType: Codable {
+    let id: UUID
+    let name: [Name]
+}

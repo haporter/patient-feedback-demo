@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+struct ResourceReference: Codable {
+    let reference: String
+}

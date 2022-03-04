@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+struct Name: Codable {
+    let text: String?
+    let family: String
+    let given: [String]
+}

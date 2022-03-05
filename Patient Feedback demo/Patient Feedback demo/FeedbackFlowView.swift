@@ -8,8 +8,38 @@
 import SwiftUI
 
 struct FeedbackFlowView: View {
+    
+    var coordinator: FeedbackFlowCoordinator {
+        FeedbackFlowCoordinator(viewModel: viewModel)
+    }
+    @ObservedObject var viewModel = FeedbackFlowViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            HStack {
+                if viewModel.showBackButton {
+                    Button {
+                        coordinator.responseTapped(Int.random(in: 0...3))
+                    } label: {
+                        HStack(spacing: 0) {
+                            Image(systemName: "chevron.backward")
+                            Text("Back")
+                        }
+                    }
+                }
+                Spacer()
+            }
+            .padding()
+            switch viewModel.state {
+            case .idle(let error):
+                Color.red
+            case .inProgress(let value):
+                
+            case .finished:
+                Color.blue
+            }
+        }
+        .interactiveDismissDisabled()
     }
 }
 

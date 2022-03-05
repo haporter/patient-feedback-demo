@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct TEMedicalRecord: Decodable {
+    let id: UUID
+    let resourceType: String
+    let timestamp: Date
+    let entry: [Entry]
+}

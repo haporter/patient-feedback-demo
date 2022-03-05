@@ -6,3 +6,16 @@
 //
 
 import Foundation
+import SwiftUI
+
+protocol ResponseType {
+    associatedtype Response
+    var options: [Response] { get set }
+    var response: Response? { get set }
+}
+
+struct FeedbackItem<CustomContent: View> {
+    var order: Int
+    var response: (Int) -> Void
+    let viewBuilder: () -> CustomContent
+}

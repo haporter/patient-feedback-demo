@@ -8,9 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var showFeedback = false
+    
     var body: some View {
-        Text("Hello, world!")
+        Button {
+            showFeedback.toggle()
+        } label: {
+            Text("Give Feedback")
+        }
             .padding()
+            .sheet(isPresented: $showFeedback, onDismiss: nil, content: FeedbackFlowView.init)
     }
 }
 

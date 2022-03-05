@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B8B2F2B927D3E66F002328F1 /* FeedbackFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B2F2B827D3E66F002328F1 /* FeedbackFlowView.swift */; };
+		B8B2F2BB27D3E706002328F1 /* FeedbackFlowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B2F2BA27D3E706002328F1 /* FeedbackFlowViewModel.swift */; };
+		B8B2F2BD27D3EEA9002328F1 /* FeedbackFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B2F2BC27D3EEA9002328F1 /* FeedbackFlowCoordinator.swift */; };
+		B8B2F2BF27D3F722002328F1 /* FeedbackItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B2F2BE27D3F722002328F1 /* FeedbackItem.swift */; };
 		B8D5E87827D27D46003CF56C /* Patient_Feedback_demoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D5E87727D27D46003CF56C /* Patient_Feedback_demoApp.swift */; };
 		B8D5E87A27D27D46003CF56C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D5E87927D27D46003CF56C /* ContentView.swift */; };
 		B8D5E87C27D27D47003CF56C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8D5E87B27D27D47003CF56C /* Assets.xcassets */; };
@@ -23,6 +27,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B8B2F2B827D3E66F002328F1 /* FeedbackFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackFlowView.swift; sourceTree = "<group>"; };
+		B8B2F2BA27D3E706002328F1 /* FeedbackFlowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackFlowViewModel.swift; sourceTree = "<group>"; };
+		B8B2F2BC27D3EEA9002328F1 /* FeedbackFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackFlowCoordinator.swift; sourceTree = "<group>"; };
+		B8B2F2BE27D3F722002328F1 /* FeedbackItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackItem.swift; sourceTree = "<group>"; };
 		B8D5E87427D27D46003CF56C /* Patient Feedback demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Patient Feedback demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8D5E87727D27D46003CF56C /* Patient_Feedback_demoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient_Feedback_demoApp.swift; sourceTree = "<group>"; };
 		B8D5E87927D27D46003CF56C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +83,10 @@
 				B8D5E88727D27DE4003CF56C /* Supporting Files */,
 				B8D5E87B27D27D47003CF56C /* Assets.xcassets */,
 				B8D5E87D27D27D47003CF56C /* Preview Content */,
+				B8B2F2B827D3E66F002328F1 /* FeedbackFlowView.swift */,
+				B8B2F2BA27D3E706002328F1 /* FeedbackFlowViewModel.swift */,
+				B8B2F2BC27D3EEA9002328F1 /* FeedbackFlowCoordinator.swift */,
+				B8B2F2BE27D3F722002328F1 /* FeedbackItem.swift */,
 			);
 			path = "Patient Feedback demo";
 			sourceTree = "<group>";
@@ -182,10 +194,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8D5E88E27D2DCA3003CF56C /* Entry.swift in Sources */,
+				B8B2F2BD27D3EEA9002328F1 /* FeedbackFlowCoordinator.swift in Sources */,
+				B8B2F2BB27D3E706002328F1 /* FeedbackFlowViewModel.swift in Sources */,
+				B8B2F2B927D3E66F002328F1 /* FeedbackFlowView.swift in Sources */,
 				B8D5E89427D2DD2C003CF56C /* AppointmentResourceType.swift in Sources */,
 				B8D5E89A27D2DE14003CF56C /* ResourceReference.swift in Sources */,
 				B8D5E89627D2DD4B003CF56C /* DiagnosisResourceType.swift in Sources */,
 				B8D5E87A27D27D46003CF56C /* ContentView.swift in Sources */,
+				B8B2F2BF27D3F722002328F1 /* FeedbackItem.swift in Sources */,
 				B8D5E89827D2DDF0003CF56C /* Name.swift in Sources */,
 				B8D5E89227D2DCFB003CF56C /* DoctorResourceType.swift in Sources */,
 				B8D5E87827D27D46003CF56C /* Patient_Feedback_demoApp.swift in Sources */,

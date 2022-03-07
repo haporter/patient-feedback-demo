@@ -12,8 +12,7 @@ class DataController: ObservableObject {
     
     let medicalRecordService: MedicalRecordServiceType
     private var cancellables = Set<AnyCancellable>()
-    
-    private(set) var records: TEMedicalRecord?
+    private(set) var record: TEMedicalRecord?
     @Published var isLoading: Bool = false
     
     init(medicalRecordService: MedicalRecordServiceType = MedicalRecordService()) {
@@ -34,7 +33,7 @@ class DataController: ObservableObject {
             .store(in: &cancellables)
     }
     
-    private func set(records fetchedRecords: TEMedicalRecord) {
-        self.records = fetchedRecords
+    private func set(records fetchedRecord: TEMedicalRecord) {
+        self.record = fetchedRecord
     }
 }

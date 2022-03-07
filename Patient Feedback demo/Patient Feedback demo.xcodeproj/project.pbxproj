@@ -16,6 +16,8 @@
 		B8B2F2B927D3E66F002328F1 /* FeedbackFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B2F2B827D3E66F002328F1 /* FeedbackFlowView.swift */; };
 		B8B2F2BB27D3E706002328F1 /* FeedbackFlowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B2F2BA27D3E706002328F1 /* FeedbackFlowViewModel.swift */; };
 		B8B2F2BD27D3EEA9002328F1 /* FeedbackFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B2F2BC27D3EEA9002328F1 /* FeedbackFlowCoordinator.swift */; };
+		B8B2F2C127D67DFF002328F1 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B2F2C027D67DFF002328F1 /* DataController.swift */; };
+		B8B2F2C327D67E5B002328F1 /* MedicalRecordService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8B2F2C227D67E5B002328F1 /* MedicalRecordService.swift */; };
 		B8D5E87827D27D46003CF56C /* Patient_Feedback_demoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D5E87727D27D46003CF56C /* Patient_Feedback_demoApp.swift */; };
 		B8D5E87A27D27D46003CF56C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D5E87927D27D46003CF56C /* ContentView.swift */; };
 		B8D5E87C27D27D47003CF56C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8D5E87B27D27D47003CF56C /* Assets.xcassets */; };
@@ -41,6 +43,8 @@
 		B8B2F2B827D3E66F002328F1 /* FeedbackFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackFlowView.swift; sourceTree = "<group>"; };
 		B8B2F2BA27D3E706002328F1 /* FeedbackFlowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackFlowViewModel.swift; sourceTree = "<group>"; };
 		B8B2F2BC27D3EEA9002328F1 /* FeedbackFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackFlowCoordinator.swift; sourceTree = "<group>"; };
+		B8B2F2C027D67DFF002328F1 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		B8B2F2C227D67E5B002328F1 /* MedicalRecordService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalRecordService.swift; sourceTree = "<group>"; };
 		B8D5E87427D27D46003CF56C /* Patient Feedback demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Patient Feedback demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8D5E87727D27D46003CF56C /* Patient_Feedback_demoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient_Feedback_demoApp.swift; sourceTree = "<group>"; };
 		B8D5E87927D27D46003CF56C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -118,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				B8D5E87727D27D46003CF56C /* Patient_Feedback_demoApp.swift */,
+				B8B2F2C227D67E5B002328F1 /* MedicalRecordService.swift */,
 				B8D5E87927D27D46003CF56C /* ContentView.swift */,
 				B801ADBD27D60DBE00A2E4F5 /* LocationService.swift */,
 				B801ADBB27D60C2600A2E4F5 /* Feedback flow */,
@@ -126,6 +131,7 @@
 				B8D5E88727D27DE4003CF56C /* Supporting Files */,
 				B8D5E87B27D27D47003CF56C /* Assets.xcassets */,
 				B8D5E87D27D27D47003CF56C /* Preview Content */,
+				B8B2F2C027D67DFF002328F1 /* DataController.swift */,
 			);
 			path = "Patient Feedback demo";
 			sourceTree = "<group>";
@@ -237,9 +243,11 @@
 				B801ADB127D4231D00A2E4F5 /* RecommendFeedbackView.swift in Sources */,
 				B8D5E88E27D2DCA3003CF56C /* Entry.swift in Sources */,
 				B8B2F2BD27D3EEA9002328F1 /* FeedbackFlowCoordinator.swift in Sources */,
+				B8B2F2C127D67DFF002328F1 /* DataController.swift in Sources */,
 				B8B2F2BB27D3E706002328F1 /* FeedbackFlowViewModel.swift in Sources */,
 				B801ADBE27D60DBE00A2E4F5 /* LocationService.swift in Sources */,
 				B8B2F2B927D3E66F002328F1 /* FeedbackFlowView.swift in Sources */,
+				B8B2F2C327D67E5B002328F1 /* MedicalRecordService.swift in Sources */,
 				B8D5E89427D2DD2C003CF56C /* AppointmentResourceType.swift in Sources */,
 				B8D5E89A27D2DE14003CF56C /* ResourceReference.swift in Sources */,
 				B8D5E89627D2DD4B003CF56C /* DiagnosisResourceType.swift in Sources */,

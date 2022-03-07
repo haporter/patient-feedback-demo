@@ -51,7 +51,7 @@ class FeedbackFlowViewModel: ObservableObject {
         Publishers.CombineLatest3(recommendResponse, diagnosisResponse, overallResponse)
             .sink { value in
                 // Sync with API
-                print(value)
+                debugPrint(value)
             }
             .store(in: &cancellables)
         

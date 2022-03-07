@@ -27,3 +27,9 @@ struct DiagnosisResourceType: Codable {
     let code: MedicalCodes
     let appointment: ResourceReference
 }
+
+extension DiagnosisResourceType {
+    var name: String? {
+        code.coding.first?.name
+    }
+}

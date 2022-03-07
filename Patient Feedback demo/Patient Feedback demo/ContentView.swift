@@ -21,9 +21,10 @@ struct ContentView: View {
         .disabled(dataController.isLoading)
         .padding()
         .sheet(isPresented: $showFeedback, onDismiss: nil) {
-            FeedbackFlowView(viewModel: .init(patient: "Peter",
-                                              doctor: "Strange",
-                                              diagnosis: "The Plague"))
+            let record = dataController.record
+            FeedbackFlowView(viewModel: .init(patient: record?.patient?.givenName ?? "",
+                                              doctor: record?.doctor?.familyName ?? "",
+                                              diagnosis: record?.diagnosis?.name ?? ""))
         }
         .onAppear {
             dataController.loadRecords()

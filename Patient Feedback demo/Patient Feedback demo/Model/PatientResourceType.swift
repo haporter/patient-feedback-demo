@@ -27,3 +27,9 @@ struct PatientResourceType: Codable {
     let birthDate: String
     let address: [Address]
 }
+
+extension PatientResourceType {
+    var givenName: String {
+        name.first?.given.first ?? ""
+    }
+}

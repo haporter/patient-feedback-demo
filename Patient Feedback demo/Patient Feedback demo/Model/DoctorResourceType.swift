@@ -11,3 +11,9 @@ struct DoctorResourceType: Codable {
     let id: UUID
     let name: [Name]
 }
+
+extension DoctorResourceType {
+    var familyName: String {
+        name.first?.family ?? ""
+    }
+}

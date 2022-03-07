@@ -9,7 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State var showFeedback = false
+    @ObservedObject private var dataController = DataController()
+    @State private var showFeedback = false
     
     var body: some View {
         Button {
@@ -17,16 +18,16 @@ struct ContentView: View {
         } label: {
             Text("Give Feedback")
         }
-            .padding()
-            .sheet(isPresented: $showFeedback, onDismiss: nil, content: FeedbackFlowView.init)
-            .onAppear {
-                testDecoding()
-            }
-    }
-    
-    func testDecoding() {
-        let medicalRecord = Bundle.main.decode(TEMedicalRecord.self, from: "patient-feedback-raw-data.json")
-        print(medicalRecord)
+        .disabled(dataController.isLoading)
+        .padding()
+        .sheet(isPresented: $showFeedback, onDismiss: nil) {
+            FeedbackFlowView(viewModel: .init(patient: "Peter",
+                                              doctor: "Strange",
+                                              diagnosis: "The Plague"))
+        }
+        .onAppear {
+            dataController.loadRecords()
+        }
     }
 }
 
